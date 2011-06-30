@@ -319,6 +319,7 @@ JNIEXPORT void JNICALL RXTXPort(Initialize)(
 	gettimeofday(&seloop, NULL);
 #endif /* DEBUG_TIMING */
 #if defined(DEBUG) && defined(__linux__)
+#if 0
 	/* Lets let people who upgraded kernels know they may have problems */
 	if (uname (&name) == -1)
 	{
@@ -334,6 +335,7 @@ JNIEXPORT void JNICALL RXTXPort(Initialize)(
 		getchar();
 	}
 	LEAVE( "RXTXPort:Initialize" );
+#endif
 #endif /* DEBUG && __linux__ */
 }
 
